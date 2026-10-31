@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modifying Attributes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#image1").attr("src", "image2.jpg");
+            });
+            $("#btn2").click(function () {
+                $("#link1")
+                    .attr("href", "https://du.astanait.edu.kz/")
+                    .text("DU");
+
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-dark">
+        <div class="container">
+            <span class="navbar-brand fs-3 fw-bold">Modifying Attributes</span>
+
+            <ul class="navbar-nav flex-row gap-3">
+                <li class="nav-item"><a href="index.html" class="nav-link">Task 0</a></li>
+                <li class="nav-item"><a href="task1.html" class="nav-link">Task 1</a></li>
+                <li class="nav-item"><a href="task2.html" class="nav-link">Task 2</a></li>
+                <li class="nav-item"><a href="task3.html" class="nav-link">Task 3</a></li>
+                <li class="nav-item"><a href="task4.html" class="nav-link">Task 4</a></li>
+                <li class="nav-item"><a href="task5.html" class="nav-link">Task 5</a></li>
+                <li class="nav-item"><a href="task6.html" class="nav-link">Task 6</a></li>
+                <li class="nav-item"><a href="task7.html" class="nav-link">Task 7</a></li>
+                <li class="nav-item"><a href="task8.html" class="nav-link">Task 8</a></li>
+                <li class="nav-item"><a href="task9.html" class="nav-link">Task 9</a></li>
+                <li class="nav-item"><a href="task10.html" class="nav-link">Task 10</a></li>
+                <li class="nav-item"><a href="task11.html" class="nav-link">Task 11</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container my-5" style="max-width: 720px;">
+        <div class="card shadow">
+            <div class="card-body p-4 p-md-5 text-center">
+                
+                <div class="py-3">
+                    <div>
+                        <img id="image1" src="image1.jpg" alt="image-1" class="img-fluid rounded shadow-sm mb-3"
+                            style="max-width: 300px;">
+                    </div>
+                    <button type="button" id="btn1" class="btn btn-primary">Change image</button>
+                </div>
+
+                <div class="py-3">
+                    <p class="fs-5">
+                        <a href="https://lms.astanait.edu.kz/my/" id="link1">LMS</a>
+                    </p>
+                    <button type="button" id="btn2" class="btn btn-success">Change link</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

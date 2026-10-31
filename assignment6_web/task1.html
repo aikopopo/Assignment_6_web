@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selectors & CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#text1").text("H<i>I wor</i>ld");
+            });
+            $("#btn2").click(function () {
+                $(".text2").html("Va<b>lid<i>at</i>io</b>n");
+            });
+            $("#btn3").click(function () {
+                $("p").css({
+                    "color": "pink",
+                    "font-size": "25px"
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-dark">
+        <div class="container">
+            <span class="navbar-brand fs-3 fw-bold">Selectors & CSS</span>
+
+            <ul class="navbar-nav flex-row gap-3">
+                <li class="nav-item"><a href="index.html" class="nav-link">Task 0</a></li>
+                <li class="nav-item"><a href="task1.html" class="nav-link">Task 1</a></li>
+                <li class="nav-item"><a href="task2.html" class="nav-link">Task 2</a></li>
+                <li class="nav-item"><a href="task3.html" class="nav-link">Task 3</a></li>
+                <li class="nav-item"><a href="task4.html" class="nav-link">Task 4</a></li>
+                <li class="nav-item"><a href="task5.html" class="nav-link">Task 5</a></li>
+                <li class="nav-item"><a href="task6.html" class="nav-link">Task 6</a></li>
+                <li class="nav-item"><a href="task7.html" class="nav-link">Task 7</a></li>
+                <li class="nav-item"><a href="task8.html" class="nav-link">Task 8</a></li>
+                <li class="nav-item"><a href="task9.html" class="nav-link">Task 9</a></li>
+                <li class="nav-item"><a href="task10.html" class="nav-link">Task 10</a></li>
+                <li class="nav-item"><a href="task11.html" class="nav-link">Task 11</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5" style="max-width: 520px;">
+        <div class="card shadow">
+            <div class="card-body p-4 p-md-5 text-center">
+                <div class="py-3">
+                    <h1 id="text1">Hello world!</h1>
+                    <button id="btn1" class="btn btn-primary mt-2">Change h1</button>
+                </div>
+                <div class="py-3">
+                    <h2 class="text2">Jquery</h2>
+                    <button id="btn2" class="btn btn-secondary mt-2">Change h2</button>
+                </div>
+                <div class="py-3">
+                    <p>New York city</p>
+                    <p>Chicago</p>
+                    <button id="btn3" class="btn btn-success mt-2">Change p</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
