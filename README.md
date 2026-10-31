@@ -1,9 +1,7 @@
 # Assignment #6. jQuery (Selectors, Effects, Animations)
 
-**Student:** Your Full Name
-**Group:** Your Group
-
-**Live demo:** https://your-username.github.io/your-repository/
+**Student:** Aigerim Karsakbay
+**Group:** SE-2526
 
 ## Description
 
